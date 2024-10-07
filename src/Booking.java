@@ -41,9 +41,10 @@ public class Booking {
     public String toString(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         StringBuilder guestInfo = new StringBuilder();
-        for(Guest guest : this.guests){
+        this.guests.forEach(guestInfo::append);
+        /*for(Guest guest : this.guests){
             guestInfo.append(guest+" ,");
-        }
-        return guestInfo.toString()  + this.room.toString() +" , type of trip: " + typeOfTrip.getStay() +", date of stay: " + formatter.format(this.startOfStay)+ " - " + formatter.format(this.endOfStay)+".";
+        }*/
+        return guestInfo  + this.room.toString() +", type of trip: " + typeOfTrip.getStay() +", date of stay: " + formatter.format(this.startOfStay)+ " - " + formatter.format(this.endOfStay)+".";
     }
 }

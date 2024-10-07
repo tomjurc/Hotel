@@ -22,6 +22,6 @@ public class Guest {
     }
     public String toString(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-        return this.fullName + ", date of birth: " + formatter.format(this.birthdate);
+        return this.fullName + ", date of birth: " + formatter.format(this.birthdate)+ " ,";
     }
 }

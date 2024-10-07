@@ -16,6 +16,6 @@ public class Room {
     }
 
     public String toString(){
-        return "Room number: " +this.id + ", number of beds: " + this.numOfBeds + ", price per night: " + this.price+ (this.hasBalcony?  ", has balcony,":", no balcony,") + (this.hasOceanView? " has ocen view":" no ocean view");
+        return "room number: " +this.id + ", number of beds: " + this.numOfBeds + ", price per night: " + this.price+ (this.hasBalcony?  ", has balcony,":", no balcony,") + (this.hasOceanView? " has ocean view":" no ocean view");
     }
 }
